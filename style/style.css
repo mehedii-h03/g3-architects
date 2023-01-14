@@ -12,10 +12,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
     font-family: 'Work Sans', sans-serif;
+}
+.title {
+    font-size: 35px;
+    color: #131313;
+    font-weight: 700;
 }
 
 .description {
@@ -41,7 +43,6 @@ body {
 /* Header Style */
 #header {
     background-color: rgba(255, 144, 14, 0.1);
-    /* height: 100vh; */
     padding: 25px 150px 30px;
 }
 
@@ -50,12 +51,6 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
-}
-
-.title {
-    font-size: 35px;
-    color: #131313;
-    font-weight: 700;
 }
 
 #nav-bar ul {
@@ -84,7 +79,6 @@ body {
 
 .banner-img img {
     width: 850px;
-    /* height: 300px; */
     margin: 30px auto 0;
 }
 
@@ -96,16 +90,16 @@ body {
     padding: 0 0 0 200px;
 }
 
-.quick-list-title{
+.quick-list-title {
     margin-bottom: 10px;
 }
 
-.delight{
+.low-light {
     color: #727272;
     font-weight: 400;
 }
 
-.highlight{
+.highlight {
     color: var(--primary-color);
 }
 
@@ -162,14 +156,19 @@ body {
     bottom: 250px;
     left: -30px;
 }
-.floating-btn-title, .floating-btn-des{
+
+.floating-btn-title,
+.floating-btn-des {
     text-align: center;
 }
-.floating-btn-title{
+
+.floating-btn-title {
     padding-top: 30px;
 }
 
-/* Media Query */
+/* -----------------
+    Media Query
+--------------------- */
 
 /* Mobile Device */
 @media only screen and (max-width: 576px) {
@@ -208,23 +207,32 @@ body {
     .banner-title {
         font-size: 35px;
     }
+
     /* Quick list */
-    .quick-list{
+    .quick-list {
         flex-direction: column;
     }
-    .quick-list-title{
+
+    .quick-list-title {
         text-align: center;
     }
-    .quick-list-team-work{
+
+    .quick-list-team-work {
         grid-template-columns: 1fr;
     }
+    .quick-list-team-work img{
+        width: 100%;
+        height: 100%;
+    }
+
     /* Feature */
     .features {
         padding: 10px;
         flex-direction: column;
         gap: 5px;
     }
-    .feature-title{
+
+    .feature-title {
         text-align: left;
     }
 
@@ -233,7 +241,8 @@ body {
         height: 500px;
 
     }
-    .floating-btn{
+
+    .floating-btn {
         display: none;
     }
 }
