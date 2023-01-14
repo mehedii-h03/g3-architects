@@ -20,6 +20,7 @@ body {
 
 .description {
     color: #727272;
+    line-height: 25px;
 }
 
 .primary-btn {
@@ -31,11 +32,17 @@ body {
     margin: 20px 0 0;
 }
 
+#header,
+.feature,
+.quick-list {
+    margin-bottom: 70px;
+}
+
 /* Header Style */
 #header {
     background-color: rgba(255, 144, 14, 0.1);
     /* height: 100vh; */
-    padding: 25px 150px 0;
+    padding: 25px 150px 30px;
 }
 
 /* Nav-bar style */
@@ -81,21 +88,106 @@ body {
     margin: 30px auto 0;
 }
 
+/* Quick List Style */
+.quick-list {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    padding: 0 0 0 200px;
+}
+
+.quick-list-title{
+    margin-bottom: 10px;
+}
+
+.delight{
+    color: #727272;
+    font-weight: 400;
+}
+
+.highlight{
+    color: var(--primary-color);
+}
+
+.quick-list-team-work {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.quick-list-team-work img {
+    height: 200px;
+    width: 200px;
+}
+
+/* Features */
+.features {
+    padding: 25px 150px 30px;
+    display: flex;
+    gap: 30px;
+}
+
+.feature-title {
+    border-left: 3px solid var(--primary-color);
+    padding: 0 0 0 15px;
+    margin-bottom: 20px;
+}
+
+.feature-card {
+    margin: 15px 0 25px;
+    padding: 25px 30px 25px 25px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+}
+
+.feature-card-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.feature-architect img {
+    width: 500px;
+    height: 700px;
+}
+
+.floating-btn {
+    height: 110px;
+    width: 130px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    margin: 0 auto;
+    position: relative;
+    bottom: 250px;
+    left: -30px;
+}
+.floating-btn-title, .floating-btn-des{
+    text-align: center;
+}
+.floating-btn-title{
+    padding-top: 30px;
+}
+
 /* Media Query */
 
 /* Mobile Device */
 @media only screen and (max-width: 576px) {
 
-    /* Header */
-    #header {
-        padding: 10px;
-    }
-
+    /* Common Style or Utilities */
     .title {
         text-align: center;
         font-size: 30px;
     }
 
+    #header,
+    .feature,
+    .quick-list {
+        margin-bottom: 40px;
+        padding: 10px;
+    }
+
+    /* Header */
     #nav-bar {
         flex-direction: column;
     }
@@ -115,5 +207,33 @@ body {
 
     .banner-title {
         font-size: 35px;
+    }
+    /* Quick list */
+    .quick-list{
+        flex-direction: column;
+    }
+    .quick-list-title{
+        text-align: center;
+    }
+    .quick-list-team-work{
+        grid-template-columns: 1fr;
+    }
+    /* Feature */
+    .features {
+        padding: 10px;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .feature-title{
+        text-align: left;
+    }
+
+    .feature-architect img {
+        width: 100%;
+        height: 500px;
+
+    }
+    .floating-btn{
+        display: none;
     }
 }
