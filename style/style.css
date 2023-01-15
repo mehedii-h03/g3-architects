@@ -184,10 +184,6 @@
     margin-bottom: 15px;
 }
 
-.fact-description{
-    text-align: center;
-}
-
 .facts-cards {
     display: flex;
     justify-content: center;
@@ -387,6 +383,9 @@ textarea {
     }
 
     /* Facts */
+    .fact-description{
+        text-align: center;
+    }
     .facts-cards {
         margin: auto;
         flex-direction: column;
