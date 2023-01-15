@@ -40,7 +40,8 @@
 .quick-list,
 .facts,
 .sponsor,
-#footer {
+#footer,
+.contact {
     margin-bottom: 70px;
 }
 
@@ -243,6 +244,39 @@
     color: #424242;
 }
 
+/* contact */
+.contact{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+.contact-title{
+    font-size: 35x;
+    padding: 30px 0 10px;
+}
+.img-side img{
+    height: 300px;
+    width: 400px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form input[type="submit"]{
+    background-color: #131313;
+    color: white;
+    cursor: pointer;
+}
+.form input, textarea{
+    background-color: #f3f3f3;
+    outline-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    width: 300px;
+}
 /* -----------------
     Media Query
 --------------------- */
@@ -346,7 +380,7 @@
         padding: 35px 0;
     }
 
-    /* Sponsnor */
+    /* Sponsor */
     .sponsor{
         margin-bottom: 20px;
     }
@@ -364,9 +398,21 @@
     .sponsor-des{
         text-align: center;
     }
+
+    /* Contact */
+    .contact{
+        flex-direction: column;
+        gap: 0px;
+    }
+    .img-side img{
+        height: 322px;
+        width: 200px;
+    }
+
     /* Footer */
     #footer{
-        margin-: 0;
+        margin: 0;
         width: 100%;
     }
+    
 }
