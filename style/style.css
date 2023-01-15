@@ -184,6 +184,10 @@
     margin-bottom: 15px;
 }
 
+.fact-description{
+    text-align: center;
+}
+
 .facts-cards {
     display: flex;
     justify-content: center;
